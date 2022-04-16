@@ -23,6 +23,13 @@ a {
 footer a:link, footer a:visited {
 	color: #FFF;
 }
+
+.kc-image {
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
 .tm-text-blue {
   color: #00ccfc;
 }
