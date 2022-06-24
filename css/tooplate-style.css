@@ -64,6 +64,10 @@ footer a:link, footer a:visited {
   }
 }
 
+.grid-images{
+  max-width: 900px;
+}
+
 /*  kc-- END OF NEW TEAMS SECTION STYLING  */
 
 .ts_image {
@@ -211,6 +215,12 @@ footer a:link, footer a:visited {
   max-width: 90%;
 }
 .tm-section-1 {
+  display: block;
+  margin-top: 70px;
+  max-width: 90%;
+}
+
+.tm-section-2 {
   display: block;
   margin-top: 70px;
   max-width: 90%;
