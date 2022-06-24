@@ -96,14 +96,14 @@ Reference: http://www.tooplate.com/view/2109-the-card
                 <h2 class="tm-section-title mb-3 font-weight-bold">Methodology</h2>
                 <div class="tm-textbox tm-bg-dark">
 
-                  <h2 class="tm-text-blue mb-4">Data Preperation</h2>
+                  <h2 class="tm-text-blue mb-4">Data Preparation</h2>
                   <p class="mb-4 kc-link">Data was aquired from sources such as the <a href="https://data.ontario.ca/organization/environment-conservation-and-parks">Government of Ontario</a>, the <a href="https://search.open.canada.ca/en/od/?od-search-subjects=Nature%20and%20Environment">Government of Canada</a>, <a href="https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/dv-vd/cpdv-vdpr/index-eng.cfm">Stats Canada</a>, and <a href="https://www.openstreetmap.org/">Open Street Maps</a>.</p>
                   <p>Layers were processed by projecting the data to the Web Mercator coordinate system (which is most useful for web-based mapping), and clipping the data to our study area of interest: Peterborough County, Ontario.</p>
                   <p>An Esri file geodatabase was created, including five different feature datasets in which to insert our processed files. This database, once filled, was uploaded to ArcGIS Online as a feature layer with which to create the maps for the StoryMap. Below is final version of our database, containing a total of 36 items. </p>
                   <img src="img/gdbfull.jpg" alt="Finalized Esri file geodatabase" class="kc-image" />
                   
                   <h2 class="tm-text-blue mb-4">Analysis</h2>
-                  <p class="mb-4"> Our proximity analysis was based on the following research done on the health effects of living in close proximity to sources of pollution </p>
+                  <p class="mb-4">A proximity-based multicriteria decision analysis (MCDA) was performed in order to determine locations in Peterborough County at risk of exposure to sources of environmental harm. The MCDA parameters were chosen based on the following research done on the health effects of living in close proximity to sources of pollution </p>
                 
                     <ul class="ts_list">
                     <li class="mb-4 kc-link"> <a href="https://www.sciencedirect.com/science/article/pii/S0160412020320109">Residential proximity to industrial pollution sources and colorectal cancer risk: A multicase-control study (MCC-Spain)</a></li>
@@ -111,7 +111,7 @@ Reference: http://www.tooplate.com/view/2109-the-card
                     <li class="mb-4 kc-link"> <a href="https://www.nature.com/articles/6600311">Cancer risks in populations living near landfill sites in Great Britain</a></li>
                     <li class="mb-4 kc-link"> <a href="https://doi-org.sandford.idm.oclc.org/10.1007/s11356-020-11004-7">Sanitary landfill site selection by integrating AHP and FTOPSIS with GIS: a case study of Memari Municipality, India</a></li>
                   </ul>
-                  <p> short explanation of ahp </p>
+                  <p>A group Analytical Hierchical Process (AHP) session was performed after deciding on the analysis parameters to determine weighting for the final analysis.  </p>
                   <p>explaining the MCDA, a little about what surfaces were used. image of the final mcda?</p>
                   <img src="img/eb_FI.jpg" alt="Experience Builder Feature Info" class="ts_image2" />
                   
