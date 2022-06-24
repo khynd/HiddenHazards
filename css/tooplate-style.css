@@ -18,7 +18,6 @@ body {
 
 a {
   transition: all 0.2s;
-  text-align: center;     /* trying to make the links centered-- kc*/
 }
 
 footer a:link, footer a:visited {
@@ -82,6 +81,11 @@ h3{
 }
 
 /*  kc-- END OF NEW TEAMS SECTION STYLING  */
+
+.kc-link a:link{text-decoration: none; color: #00ccfc;}
+.kc-link a:visited{text-decoration: none; color: #0082fc;}
+.kc-link a:active{text-decoration: none; color: #0082fc;}
+.kc-link a:hover{text-decoration: none; color: white;}
 
 .ts_image {
   display: block;
