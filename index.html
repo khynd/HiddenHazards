@@ -73,28 +73,21 @@ Reference: http://www.tooplate.com/view/2109-the-card
             <!-- Site content -->
             <div class="tm-content">
               <!-- Section 0 Introduction -->
-              <section class="tm-section tm-section-0">
+              <section class="tm-section tm-section-1">
                 <h2 class="tm-section-title mb-3 font-weight-bold">
                   Introduction
                 </h2>
                 <div class="tm-textbox tm-bg-dark">
-                  <p> The Tenants’ Act team was formed for our upcoming collaborative project focusing on environmental injustice in Peterborough County, which will begin in May 2022. As we were so excited about getting to delve deeper into this subject matter, we decided to look at a similar topic for our GEOM99 project. We wanted to keep our focus on the relationships between industrial zones and community spaces-- in particular, those that are generally occupied by low-income households. This potential correlation is something we will get to explore more thoroughly in the coming weeks as part of our Collaborative Project. </p>
-                  <h2 class="tm-text-blue mb-4">Our Ideal</h2>
+                  <p> Industrial operations within Peterborough may impact racialized and low income communities at a disproportionately higher rate than other communities. Through a collaboration, this project is to explore this spatially.</p>
+                  <h2 class="tm-text-blue mb-4">The Clients</h2>
                   <p>
-                    Peterborough residents and organizations can visit a website that displays three different ways to map areas with a high risk of environmental harm. Each embedded map shows the main areas of harm such as the old GE building, and old industrial buildings with lasting effects on the land.
-                  </p>
-                  <h2 class="tm-text-blue mb-4">Our Reality</h2>
+                    This project was a collaboration between the Community Race Relations Committee of Peterborough, GreenUP, Kawartha World Issues Centre, and academics at Trent University and the University of Toronto. ((images insert maybe?))
+                    </p>
+                  <h2 class="tm-text-blue mb-4">Project Abstract</h2>
                   <p>
-                    There is no easy to digest web map that shows residents of Peterborough the reality of their proximity to neighbourhood pollutants.
+                    Peterborough County, Ontario has had a significant amount of industrial operations within its borders, which may be impacting racialized and low income communities at a disproportionately higher rate than other communities. Community Race Relations Committee of Peterborough, GreenUp, Kawartha World Issues Center, Trent University, and University of Toronto have all teamed up with a desire to evaluate and map this environmental injustice in Peterborough. Our team has aided this goal by collecting relevant data and completing spatial analysis to evaluate the injustice and map these locations in an easy to use web application to be viewed by the community. The result of this effort is a descriptive Esri StoryMap, an Esri file geodatabase full of our processed data layers and analysis layers, and documentation for the ways we completed these tasks in order to aid in the future of the project. These layers include relevant source data processed and ready for future analysis, operational layers such as rated hazard surfaces and a Multi Criteria Decision Analysis rated surface, and useful models that can be followed to continue our work. This project is only the beginning of a much larger look into environmental injustice in the area, which our team looks forward to seeing grow in the future.
                   </p>
-                  <h2 class="tm-text-blue mb-4">Our Consequences</h2>
-                  <p>
-                    Residents and policy makers do not know the extent of local pollution and potential health consequences. 
-                  </p>
-                  <h2 class="tm-text-blue mb-4">Our Proposal</h2>
-                  <p class="mb-0">
-                    We will explore and develop a web product using either AGOL Experience Builder, StoryMaps, or Dashboard and will display it in a map embedded on a webpage. The map will display areas with high levels of pollution.
-                  </p>
+                  
                 </div>
                 <a href="#" id="tm_about_link" data-linkid="1" class="tm-link">Read More</a>
               </section>
@@ -103,59 +96,25 @@ Reference: http://www.tooplate.com/view/2109-the-card
               <section class="tm-section tm-section-1">
                 <h2 class="tm-section-title mb-3 font-weight-bold">Methodology</h2>
                 <div class="tm-textbox tm-bg-dark">
-                  <h2 class="tm-text-blue mb-4">ArcGIS Online Dashboards</h2>
-                  <p class="mb-4">Using feature layers found on ArcGIS Online, a web map was created to show community housing, greenspace and industrial areas in Peterborough. Layer and display names were then changed to be more appropriate. Clustering was also enabled in the Community Housing Layer to group features together when zoomed out.</p>
-                  <img src="img/ds_webmap.jpg" alt="Web Map layers name change" class="ts_image" />
-                  <p>On the newly created Peterborough Industrial area and Community Housing web map item page on AGOL, a Dashboard Web app was chosen to create a new dashboard. In the layout tab, map legend and rich text body elements were selected to add into the dashboard and a Dark Layout Theme was chosen. Initially the map legend option within the map settings was chosen, which enabled a legend button on the map, however it made more sense to have a permanent legend which didn't obscure the map.</p>
-                  <img src="img/ds_layout1.jpg" alt="Dashboard Layout items" class="ts_image" />
-                  <p>Within the map settings layer visibility, basemap switcher and Pop-ups were enabled. The layer visibility and basemap switcher options added buttons that provided the option to toggle different layers on/off and the switching of basemap types. The pop-up setting enabled the ability to click on features and have a table with the features attributes pop up.</p>
+
+                  <h2 class="tm-text-blue mb-4">Data Preperation</h2>
+                  <p class="mb-4">Data was aquired from sources such as ----examples----</p>
+                  <p>Example of processing workflow (eg clip, project to mercator)</p>
+                  <p>An Esri file geodatabase was created, including five different feature datasets in which to insert our processed files. This database, once filled, was uploaded to ArcGIS Online as a feature layer with which to create the maps for the StoryMap.</p>
                   <img src="img/ds_mapsettings.JPG" alt="Dashboard Map Settings" class="ts_image2" />
-                  <p>A list body element was used to create a list of Community Housing. The list was then sorted by the area field and the flash, show pop up and zoom options were enabled. When a item is selected in the list, a pop up table of the community housing features attribute table will appear and the feature will flash and zoom to its location on the map. Default extent and bookmarks was also enabled to allow the user to click a button to return to the original map extent.</p>
-                  <img src="img/ds_listsort.JPG" alt="Dashboard List" class="ts_image">
-                  <p>Below is a screenshot of the final product. Click on the image to go to a working version of the dashboard.</p>
-                  <p><a href="https://www.arcgis.com/apps/dashboards/16d20e7b0d084abbbc6ca6e2ac2d2b1f">
-                  <img src="img/ds_final.JPG" alt="Dashboard Final Product" class="kc-image" /></a></p>
-                  <p>Out of the 3 options explored, the Dashboard proved the most limited in its ability to effectively tell the detailed story that we were aiming to achieve. It would be better suited to communicate information in a quick and simple manner. We also discovered that without heavy editing in the web map, the dashboard was limited ability display information in a meaningful way. The other element items, such as the pie chart, indicator, gauge, and serial chart items, were deemed not appropriate as we lacked the quantitative data necessary for these to be of use. </p>
                   
-                  <h2 class="tm-text-blue mb-4">ArcGIS Online Experience Builder</h2>
-                  <p class="mb-4"> A web map was first created to form the main section of the Experience Builder design. This map included layers showing some industrial areas in the city, as well as a community housing layer and greenspace. </p>
-                  <img src="img/eb_webmap.jpg" alt="Experience Builder Web Map" class="kc-image" />
-                  <p> The layout was decided after playing with the available widgets offered by Experience Builder. Initially, the List widget was being used to talk about relevant locations in the area, but ultimately the Bookmarks widget was more useful, as it could act like a tour around the relevant locations. </p>
-                  <img src="img/eb_bookmarks.jpg" alt="Experience Builder Bookmarks" class="kc-image" />
-                  <p> The Feature Info widget was used to show attributes of the community housing layer when clicked, and the map pop-up on click was removed. The first Image below is when what the empty box looks like (left) versus when an item is selected on the map (right). </p>
+                  <h2 class="tm-text-blue mb-4">Analysis</h2>
+                  <p class="mb-4"> research summary sentence </p>
+                  <p> short explanation of ahp </p>
+                  <p>explaining the MCDA, a little about what surfaces were used. image of the final mcda?</p>
                   <img src="img/eb_FI.jpg" alt="Experience Builder Feature Info" class="kc-image" />
-                  <p> Options to toggle on the legend and map layers were added using widgets in the header, as well as a search function, measurement tool, and a find location tool. </p>
-                  <img src="img/eb_header.jpg" alt="Experience Builder layout header" class="kc-image" />
-                  <p> The last step of the layout was to determine how it changes when resized. Experience Builder offers many options for screen size, which can be redesigned for each major size group (like small, medium, large). For different size ratios within these broad categories, any layout adjustment made would apply to all of them, so some of the smallest size option have odd looking layouts still. To compensate for text overlapping among different sizes (image below), the subheading was hidden for medium screens (left), and both the title and the subheading were hidden from small screens (right). </p>
-                  <img src="img/eb_notlarge.jpg" alt="Experience Builder small and medium sized screen layouts" class="kc-image" />
-                  <p> The best version of the layout is the large screen layout (below). </p>
-                  <p><a href="https://experience.arcgis.com/experience/679d5d7971df4be89a6536ee43134ccd"><img src="img/eb_large.jpg" alt="Experience Builder large screen layout" class="kc-image" /></a></p>
-                  <p> While Experience Builder provides useful options, ultimately with the story we want to tell with the data, something that offers more of a text-based tour through the data would be more useful. The Bookmarks widget provides some capability for this, but the StoryMap service is undoubtedly a better strategy for this type of project. </p>
-                  <p></p>  <!-- I'm sorry for this line, i'm lazy lol  ~kc -->
-                  <h2 class="tm-text-blue mb-4">ArcGIS StoryMaps</h2>
-                  <p class="mb-4"> Prior to creating a web map, a new story was launched in the ArcGIS StoryMap application in order to build a structural skeleton before populating it with content. Using the design menu, a full cover style was selected as well as the Summit theme.</p>
-                  <p> Theme Selection: </p>
-                  <img src="img/01DesignCoverTheme.jpg" alt="StoryMaps Cover Theme" class="at_image" />
-                  <p> After the design style was determined, imagery of Peterborough was imported for use as the cover photo. Initially we considered linking to an image, however within StoryMaps, the cover photo must be uploaded and url links only work in other sections of the story. It's an oddly specific quirk, but not too arduous to work around. One of the highlights of StoryMaps is the ease of working with the story layout options and the fact that these options are mostly intuitive. Overall, the UX is a treat to use. When inserting the Peterborough cover photo, we could immediately see how it would look on different displays in real time. </p>
-                  <p> Cover photo display options: </p>
+                  
+                  <h2 class="tm-text-blue mb-4">Visualization</h2>
+                  <p class="mb-4"> short summary of design / asset collection</p>
+                  <p> web design, colour choices, icon choices. (the theme also?) </p>
+                  <p> lil example of our map choices, like ths swiping or the quotations </p>
                   <img src="img/02CoverPhotoDisplay.jpg" alt="StoryMaps Cover Photo Display" class="at_image" />
-                  <p> Final Cover Photo- 'Full' Layout </p>
-                  <img src="img/05CoverPhoto.jpg" alt="StoryMaps Cover Photo" class="at_image" />
-                  <p> Another functionality that takes the guesswork out of handling images is the way in which StoryMaps only allows the user to select sizes that won't distort the image i.e. you can only select the large option if your image is at least 1920 px wide. At this point, a Peterborough web map was created back in ArcGIS online using layers acquired in AGOL- including greenspace, industrial areas, community housing points, roads, rail and local hydrology. At this stage of data, we simply wanted to experiment with industrial / rail proximity to affordable housing. Symbology was developed and a color ramp of Chamois selected for the Industrial layer. </p>
-                  <img src="img/03WebMapSymbology.jpg" alt="StoryMaps Web Map Symbology" class="at_image" />
-                  <p> We learned that while you can adjust the map appearance within StoryMaps- any changes you make will only affect the map in that particular story - which has a use case, but in the end we decided to do all of our map styling within the web map item itself in order to maintain consistency if it is imported into another story. After putting together the web map, we returned to StoryMaps to flesh out the layout and import additional visuals. An unexpected pitfall of StoryMaps is that its simplicity means you can end up overcomplicating the process for yourself and it's easy to accidentally hit the plus sign option expecting an edit menu to pop up when it's just a place to insert more content. </p>
-                  <img src="img/04ContentInsertionPoint.jpg" alt="StoryMaps Web Map Symbology" class="at_image" />
-                  <p> Through the exploration process, we realized that when you change the symbology of your map back in map viewer, it doesn't update the map in the story automatically- you have to select “publish” in order to see your most recent visual treatment. Thankfully it retains the original zoom level from the previous iteration- a definite pro if you spent time honing the exact extent you want to show in the story. An additional challenge is that occasionally the web map stalls a few seconds and doesn't immediately load. This can be remedied by reducing the number of layers, using an express map to display the data or refreshing the page. </p>
-                  <p> Ultimately we have selected StoryMaps as our preferred solution because of its simplicity, ease of use and relative expediency for what it delivers. Not only does it play well with other ArcGIS web functionalities, it creates an aesthetically pleasing end product. We set out to create a web map that was digestible for the public and policy makers on proximity to neighbourhood pollution. Essentially StoryMaps creates a website type container to display our content without the need to wrestle with backend layout code. </p>
-                  <p> With the ability to seamlessly incorporate an interactive scrolling map- the user can be directed to the geographical areas we want to highlight in sequence using Sidecar. The scrolling effect adds a dynamic quality to the user experience and helps the flow of our story. </p>
-                  <p> Start with full map extent: </p>
-                  <img src="img/06ProximityMaps.jpg" alt="StoryMaps Web Map Full Extent" class="at_image" />
-                  <p> Scroll to closer look: </p>
-                  <img src="img/07ZoomedIn.jpg" alt="StoryMaps Web Map Zoomed" class="at_image" />
-                  <p> Sidecar functionality: </p>
-                  <img src="img/08InteractiveSidecar.jpg" alt="StoryMaps Web Map Sidecar One" class="at_image" />
-                  <p> Scroll to another viewing area via Sidecar: </p>
-                  <img src="img/09InteractiveSidecar2.jpg" alt="StoryMaps Web Map Sidecar Two" class="at_image" />
+                  
                   
                   <a
                     href="#"
@@ -178,7 +137,7 @@ Reference: http://www.tooplate.com/view/2109-the-card
                         <span>Database Lead</span>
                       </h2>
                       <p> Contact: k.hyndman7@gmail.com</p>
-                      <a href="mailto:k.hyndman7@gmail.com">Contact</a>
+                      <a href="mailto:k.hyndman7@gmail.com">Contact</a> <!-- was just testing this, doesnt work -->
                     </figcaption>
                   </figure>
                   <figure class="effect-goliath tm-gallery-item">
