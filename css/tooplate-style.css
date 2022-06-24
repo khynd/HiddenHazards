@@ -95,8 +95,8 @@ h3{
   width: 100%;
 }
 
-.t_lineheight {
-  line-height: 1;
+.ts_list {
+  list-style-type: circle;
 }
 
 .ts_image2 {
