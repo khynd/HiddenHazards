@@ -65,7 +65,13 @@ footer a:link, footer a:visited {
 }
 
 .grid-images{
-  max-width: 200px;
+  max-width: 250px;
+}
+h3{
+  font-size: 1.3rem;
+}
+.teams-p{
+  font-size: 90%;
 }
 
 /*  kc-- END OF NEW TEAMS SECTION STYLING  */
