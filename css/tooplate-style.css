@@ -95,6 +95,10 @@ h3{
   width: 100%;
 }
 
+.t_lineheight {
+  line-height: 1;
+}
+
 .ts_image2 {
   display: block;
   margin-left: auto;
