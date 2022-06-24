@@ -59,7 +59,7 @@ footer a:link, footer a:visited {
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .grid-container  {
     grid-template-areas: 
       'left left left left left left' 
