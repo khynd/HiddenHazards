@@ -42,16 +42,19 @@ footer a:link, footer a:visited {
 /* Style the left column */
 .left {
   grid-area: left;
+  max-width: 340px;
 }
 
 /* Style the middle column */
 .middle {
   grid-area: middle;
+  max-width: 340px;
 }
 
 /* Style the right column */
 .right {
   grid-area: right;
+  max-width: 340px;
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
@@ -69,6 +72,7 @@ footer a:link, footer a:visited {
 }
 h3{
   font-size: 1.3rem;
+  padding: 10px;
 }
 .teams-p{
   font-size: 90%;
