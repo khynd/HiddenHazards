@@ -217,7 +217,7 @@ footer {
 
 /* Image Gallery */
 .tm-gallery {
-  max-width: 860px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
