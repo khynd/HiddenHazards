@@ -24,6 +24,48 @@ footer a:link, footer a:visited {
 	color: #FFF;
 }
 
+
+/* kc-- NEW SECTION FOR TEAM PAGE STYLING */
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+    'left left middle middle right right';
+  grid-column-gap: 10px;
+} 
+
+.left,
+.middle,
+.right {
+  padding: 10px;
+}
+
+/* Style the left column */
+.left {
+  grid-area: left;
+}
+
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+}
+
+/* Style the right column */
+.right {
+  grid-area: right;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .grid-container  {
+    grid-template-areas: 
+      'left left left left left left' 
+      'middle middle middle middle middle middle' 
+      'right right right right right right';
+  }
+}
+
+/*  kc-- END OF NEW TEAMS SECTION STYLING  */
+
 .ts_image {
   display: block;
   margin-left: auto;
