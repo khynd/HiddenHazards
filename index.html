@@ -53,7 +53,7 @@ Reference: http://www.tooplate.com/view/2109-the-card
             </li>
             <li class="tm-nav-item">
               <a
-                rel="nofollow" href="https://storymaps.arcgis.com/stories/e3afd7be77a74c87a0c1ee78376b1b0b"
+                rel="nofollow" href="https://storymaps.arcgis.com/stories/ca13dab7668c4af59d6ea78244747997"
                 class="tm-nav-link external">StoryMap</a>
             </li>
           </ul>
@@ -103,25 +103,21 @@ Reference: http://www.tooplate.com/view/2109-the-card
                   <img src="img/gdbfull.jpg" alt="Finalized Esri file geodatabase" class="kc-image" />
                   
                   <h2 class="tm-text-blue mb-4">Analysis</h2>
-                  <div>
-                  <p class="mb-4">A proximity-based multicriteria decision analysis (MCDA) was performed in order to determine locations in Peterborough County at risk of exposure to sources of environmental harm. Taking into account the collected data, the MCDA parameters were chosen based on the following research done on the health effects of living in close proximity to sources of pollution along with a landfill site selection analysis.</p>
                 
+                  <p class="mb-4 kc-link">A proximity-based multicriteria decision analysis (MCDA) was performed in order to determine locations in Peterborough County at risk of exposure to sources of environmental harm. Taking into account the collected data, the MCDA parameters were chosen based on the following research done on the health effects of living in close proximity to sources of pollution along with a landfill site selection analysis.</p>
                     <ul class="ts_list">
                     <li class="mb-4 kc-link"> <a href="https://www.sciencedirect.com/science/article/pii/S0160412020320109">Residential proximity to industrial pollution sources and colorectal cancer risk: A multicase-control study (MCC-Spain)</a></li>
                     <li class="mb-4 kc-link"> <a href="https://www.sciencedirect.com/science/article/abs/pii/S0277953619301820?via%3Dihub">Mapping inequality: Childhood asthma and environmental injustice, a case study of St. Louis, Missouri</a></li>
                     <li class="mb-4 kc-link"> <a href="https://www.nature.com/articles/6600311">Cancer risks in populations living near landfill sites in Great Britain</a></li>
                     <li class="mb-4 kc-link"> <a href="https://doi-org.sandford.idm.oclc.org/10.1007/s11356-020-11004-7">Sanitary landfill site selection by integrating AHP and FTOPSIS with GIS: a case study of Memari Municipality, India</a></li>
                   </ul>
-                  </div>
-                  <div>
-                  <p>A group Analytical Hierchical Process (AHP) session was performed after deciding on the analysis parameters to determine weighting for the final analysis.  </p>
-                  <img src="img/AHP.jpg" alt="Group AHP Results" class="kc-image"/>
-                  </div>
-                  <div></div>
-                  <p>explaining the MCDA, a little about what surfaces were used. image of the final mcda?</p>
-                  <img src="img/eb_FI.jpg" alt="Experience Builder Feature Info" class="ts_image2" />
-                  </div>
-
+                  <p>A group Analytical Hierchical Process (AHP) session was performed after deciding on the analysis parameters to determine weighting for the final analysis.</p>
+                  <img src="img/AHP.jpg" alt="Group AHP Results" class="ts_image2" />
+                  <p>MCDA layers were produced by creating euclidean distance rasters of the 6 analysis parameters. These were then reclassified into distance categories based on categories used in the aforementioned studies.</p>
+                  <img src="img/npri_workflow.JPG" alt="Workflow model of the NPRI MCDA criteria rasters." class="ts_image2" /> 
+                  <p>A weighted overlay was then performed using the reclassified distance rasters to produce the final analysis output.</p>
+                  <img src="img/mcda.jpg" alt="MCDA Results" class="ts_image3" />
+                  
                   <h2 class="tm-text-blue mb-4">Visualization</h2>
                   <p class="mb-4"> short summary of design / asset collection</p>
                   <p> web design, colour choices, icon choices. (the theme also?) </p>
@@ -153,14 +149,14 @@ Reference: http://www.tooplate.com/view/2109-the-card
                     <img src="img/at_profile4.jpeg" alt="Amanda" class="grid-images" />
                     <h3>Amanda Terfloth</h3>
                     <p class="teams-p">Visualization Lead </p>
-                    <div style="text-align:center"><a href="mailto:somewhere@gmail.com">Contact</a></div>
+                    <div style="text-align:center"><a href="mailto:amanda.terfloth@gmail.com">Contact</a></div>
                   </div>
 
                   <div class="right tm-textbox tm-bg-dark">
                     <img src="img/tim.jpg" alt="Tim" class="grid-images" />
                     <h3>Timothy Shin</h3>
                     <p class="teams-p">Spatial Analyst Lead</p>
-                    <div style="text-align:center"><a href="mailto:somewhere@gmail.com">Contact</a></div>
+                    <div style="text-align:center"><a href="mailto:timothyshin156@gmail.com">Contact</a></div>
                   </div>
                
                 </div>
@@ -245,9 +241,9 @@ Reference: http://www.tooplate.com/view/2109-the-card
         // https://www.jqueryscript.net/slideshow/Simple-jQuery-Background-Image-Slideshow-with-Fade-Transitions-Background-Cycle.html
         bgCycle = $("body").backgroundCycle({
           imageUrls: [
-            "img/bg_quakeroats.jpg",
-            "img/bg_dam.jpg",
-            "img/bg_westclox.jpg"
+            "img/bg_ge.jpg",
+            "img/bg_factorysky.png",
+            "img/bg_sunsetbridge.png"
           ],
           fadeSpeed: 2000,
           duration: -1,
