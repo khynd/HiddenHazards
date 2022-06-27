@@ -96,7 +96,11 @@ h3{
 }
 
 .ts_list {
-  list-style-type: circle;
+  line-height: 80%;
+  text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .ts_image2 {
